@@ -6,8 +6,8 @@ class TOML_Handler:
         self.path = path
 
     def load(self):
-        with open(self.path, 'r') as f:
-            self.config = toml.load(self.path)
+        with open(self.path, 'r') as file:
+            self.config = toml.load(file)
         return self.config
 
     def save(self):
