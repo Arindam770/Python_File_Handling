@@ -7,8 +7,7 @@ class Excel_Handler:
 
     def write_excel_dict(self, data):
         if not data:
-            print("No data to write!")
-            return  # Avoid errors when data is empty
+            print("No data to write!")  # Avoid errors when data is empty
 
         all_columns = list(data[0].keys())  # Extract column names
 
